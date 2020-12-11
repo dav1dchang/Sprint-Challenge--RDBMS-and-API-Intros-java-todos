@@ -1748,9 +1748,18 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Can you explain your data model, data schema to me?
+The todos have a ManyToOne relationship with the users and they're connected utilizing the userid.
+
 2. Can you explain how you connected your API to a database?
+The controllers utilize services method calls that then reach out to the repositories and make calls to them.
+
 3. Can you explain the flow of data from client through the backend system and back to the client?
+It goes from the controller to services to the repositories to the models and then repeats the cycle.
+
 4. How did you handle querying in your application: custom querying vs JPA Querying?
+I didn't tackle the stretch, so there were no custom queries in my project, and everything was accomplished utilizing JPA querying.
+
+
 
 ## Instructions
 
